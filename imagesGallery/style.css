@@ -1,0 +1,53 @@
+/* Global Styles */
+:root {
+	--primary-color: #e50914;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	/* background: #000; */
+	/* color: #999; */
+}
+
+.img-gallery .gallery-item img{
+    border-radius: 5px;
+    box-shadow: 0 0 21px rgb(0 0 0);
+    height: 350px;
+    transition: transform 500ms;
+}
+
+.img-gallery .gallery-item img:hover{
+	cursor: pointer;
+	transform: scale(1.08);
+}
+
+#imgModal .modal-header{
+    padding: 0;
+    border: 0;
+}
+#imgModal .modal-header .close{
+    position: absolute;
+    z-index: 2;
+    right: -172px;
+    top: -7px;
+    font-size: 42px;
+    color: #ffff;
+}
+#imgModal .modal-header .close:focus{
+    outline: none;
+}
+
+#imgModal .modal-body img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}

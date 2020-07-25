@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Dynamic Image Galley</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="img-gallery jumbotron jumbotron-fluid bg-transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/4e6c2d7a55780d51cce1759c9135ea9f.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/8Hy6af.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/Cxs-cKKWQAAlZuS.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/hollywood-movies-posters-hd-the-wolverine-movie-posters.jpg"
+                            class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/C3miDsUUMAIF_Wj.jpg_large" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/ed456c881f8c4cc4fee74480e4339257.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/Extraction-ChrisHemsworth-NetflixHollywoodBlockbusterEnglishMoviePoster_c030d080-0ca3-433e-8670-dd1533042a47.webp"
+                            class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/POPEYE HD FUL FILM.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/4e6c2d7a55780d51cce1759c9135ea9f.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/8Hy6af.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/THOR-II.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 gallery-item mb-4">
+                    <a href="#" data-toggle="modal" data-target="#imgModal">
+                        <img src="../images/hollywood-movies-posters-hd-the-wolverine-movie-posters.jpg"
+                            class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header p-0 pr-3">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 bg-transparent">
+                    <img src="../images/hollywood-movies-posters-hd-the-wolverine-movie-posters.jpg" class="img-fluid"
+                        id="modalImgOpen">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(".gallery-item").click(function () {
+            var imgPath = $(this).find(".img-fluid").attr("src");
+            $('#modalImgOpen').attr("src", imgPath)
+        });
+    </script>
+</body>
+
+</html>
